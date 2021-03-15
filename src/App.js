@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/Header';
+import NCarousel from './components/NCarousel';
+import '../node_modules/flickity/css/flickity.css';
+import './components/assets/style.min.css';
+import Episode from './components/Episode';
+import RandomText from './components/RandomText';
+import TrendingLooks from './components/TrendingLooks';
+import Stories from './components/Stories';
+import Instagram from './components/Instagram';
+import Footer from './components/Footer';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<Header />
+			<NCarousel />
+			<Episode />
+			<RandomText />
+			<TrendingLooks />
+			<Stories />
+			<Instagram />
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
